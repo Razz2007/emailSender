@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Enviar Correo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Enviar Correo</h2>
+    <form id="emailForm">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" required>
+
+      <label for="type">Tipo de correo:</label>
+      <select id="type" required>
+        <option value="basicEmail">Básico</option>
+        <option value="advancedEmail">Avanzado</option>
+        <option value="newAccount">Nueva cuenta</option>
+        <option value="forgotPassword">Recuperar contraseña</option>
+        <option value="activate">Activación</option>
+        <option value="passwordChanged">Cambio de contraseña</option>
+        <option value="lowStock">Stock bajo</option>
+        <option value="purchase">Compra realizada</option>
+      </select>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="message" id="response"></div>
+  </div>
+
+  <script src="./js/Main.js"></script>
+</body>
+</html>
